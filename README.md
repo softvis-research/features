@@ -1,4 +1,4 @@
-# Feature Isolation
+# Features
 
 This repository contains three programs for feature location analysis in Software Product Lines (SPLs).
 1. **feature_isolation_demo.cpp**<br/>
