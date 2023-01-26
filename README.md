@@ -1,14 +1,12 @@
 # Feature Isolation
 
 This repository contains three programs for feature location analysis in Software Product Lines (SPLs).
-1.  feature_isolation_demo.cpp
+1. **feature_isolation_demo.cpp**<br/>
 Calculates set differences to isolate features without IDs.
-2. feature_differences_demo.cpp
+2. **feature_differences_demo.cpp**<br/>
 Calculates all set differences with IDs.
-3. feature_calculation_demo.cpp
+3. **feature_calculation_demo.cpp**<br/>
 Calculates only valid set differences with IDs.
-
-Author: [Ulrich Eisenecker](https://www.wifa.uni-leipzig.de/personenprofil/mitarbeiter/prof-dr-ulrich-eisenecker)
 
 ## Compilation
 1. `$ g++ feature_isolation_demo.cpp -std=c++20 -o fid.exe`
@@ -35,3 +33,6 @@ The programs accept two values as input, namely the number of independent featur
 - D, number of all set differences of SPL systems
 - List of all systems with system names and features
 - List of all features plus the set difference that isolates this feature with systems as elements
+
+## Author
+[Ulrich Eisenecker](https://www.wifa.uni-leipzig.de/personenprofil/mitarbeiter/prof-dr-ulrich-eisenecker)
