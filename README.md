@@ -1,4 +1,4 @@
-# Features
+# Introduction
 
 This repository contains three programs for feature location analysis in Software Product Lines (SPLs).
 1. **feature_isolation_demo.cpp**<br/>
@@ -8,7 +8,7 @@ Calculates all set differences with IDs.
 3. **feature_calculation_demo.cpp**<br/>
 Calculates only valid set differences with IDs.
 
-## Compilation
+## Compile
 1. `$ g++ feature_isolation_demo.cpp -std=c++20 -o fid.exe`
 2. `$ g++ feature_differences_demo.cpp -std=c++20 -o fdd.exe`
 2. `$ g++ feature_calculation_demo.cpp -std=c++20 -o fcd.exe`
