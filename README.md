@@ -8,12 +8,12 @@ Calculates all set differences with IDs.
 3. **feature_calculation_demo.cpp**<br/>
 Calculates only valid set differences with IDs.
 
-## Compile
+# Compilation
 1. `$ g++ feature_isolation_demo.cpp -std=c++20 -o fid.exe`
 2. `$ g++ feature_differences_demo.cpp -std=c++20 -o fdd.exe`
 2. `$ g++ feature_calculation_demo.cpp -std=c++20 -o fcd.exe`
 
-## Usage
+# Usage
 1. `$ ./fid.exe`
 2. `$ ./fdd.exe`
 2. `$ ./fcd.exe`
@@ -34,5 +34,5 @@ The programs accept two values as input, namely the number of independent featur
 - List of all systems with system names and features
 - List of all features plus the set difference that isolates this feature with systems as elements
 
-## Author
+# Author
 [Ulrich Eisenecker](https://www.wifa.uni-leipzig.de/personenprofil/mitarbeiter/prof-dr-ulrich-eisenecker)
