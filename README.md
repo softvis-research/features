@@ -1,3 +1,5 @@
+[![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
+
 # Introduction
 
 This repository contains three programs for feature location analysis in Software Product Lines (SPLs).
