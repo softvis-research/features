@@ -3,8 +3,8 @@
  * \author Ulrich W. Eisenecker
  * \date December 21, 2022
  * \warning This program is a research prototype only. It comes with
-    no warranty and no liability. Use it only at your own risk!
- * \license This program is released under the Apache License 2.0.
+ *  no warranty and no liability. Use it only at your own risk!
+ * \copyright This program is released under the Apache License 2.0.
  */
 
 #include <iostream>
