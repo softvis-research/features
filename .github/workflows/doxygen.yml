@@ -26,7 +26,7 @@ jobs:
 
     - name: Copy Doxygen to gh-pages
       run: |
-        rm -rf * || true
+        git rm -rf *
         cp -r html/* .
         git config user.email "github-actions@github.com"
         git config user.name "GitHub Actions"
