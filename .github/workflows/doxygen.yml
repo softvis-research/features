@@ -1,0 +1,41 @@
+name: Doxygen
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+
+    - name: Generate Doxygen
+      uses: docker://doxygen/doxygen
+      with:
+        args: doxygen Doxyfile
+
+    - name: Checkout gh-pages
+      uses: actions/checkout@v2
+      with:
+        ref: gh-pages
+        submodules: 'recursive'
+
+    - name: Copy Doxygen to gh-pages
+      run: |
+        rm -rf *
+        cp -r html/* .
+        git config user.email "github-actions@github.com"
+        git config user.name "GitHub Actions"
+        git add .
+        git commit -m "Generate Doxygen" || true
+
+    - name: Push changes to gh-pages
+      uses: ad-m/github-push-action@v0.8.0
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        branch: gh-pages
+        force: true
