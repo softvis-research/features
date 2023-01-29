@@ -1,5 +1,5 @@
 PROJECT_NAME           = Features
-OUTPUT_DIRECTORY       = ./
+OUTPUT_DIRECTORY       = ./docs
 INPUT                  = ./src
 GENERATE_LATEX         = NO
 HAVE_DOT               = YES
