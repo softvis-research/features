@@ -1,0 +1,9 @@
+PROJECT_NAME           = Features
+OUTPUT_DIRECTORY       = ./
+INPUT                  = ./src
+GENERATE_LATEX         = NO
+HAVE_DOT               = YES
+CALL_GRAPH             = YES
+CALLER_GRAPH           = YES
+GRAPHICAL_HIERARCHY    = YES
+DIRECTORY_GRAPH        = YES
