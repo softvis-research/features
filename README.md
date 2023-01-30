@@ -14,12 +14,12 @@ Calculates only valid set differences with IDs.
 # Compilation
 1. `$ g++ feature_isolation_demo.cpp -std=c++20 -o fid.exe`
 2. `$ g++ feature_differences_demo.cpp -std=c++20 -o fdd.exe`
-2. `$ g++ feature_calculation_demo.cpp -std=c++20 -o fcd.exe`
+3. `$ g++ feature_calculation_demo.cpp -std=c++20 -o fcd.exe`
 
 # Usage
 1. `$ ./fid.exe`
 2. `$ ./fdd.exe`
-2. `$ ./fcd.exe`
+3. `$ ./fcd.exe`
 
 The programs accept two values as input, namely the number of independent features and the selected model (M1 to M19, entered as an integer in the interval 1..19). Afterwards it stores the following results in a comma-separated value (CSV) file.
 
