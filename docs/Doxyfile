@@ -1,6 +1,7 @@
 PROJECT_NAME           = Features
 OUTPUT_DIRECTORY       = ./docs
-INPUT                  = ./src ./Readme.md
+INPUT                  = ./src ./README.md
+USE_MDFILE_AS_MAINPAGE = README.md
 GENERATE_LATEX         = NO
 HAVE_DOT               = YES
 CALL_GRAPH             = YES
