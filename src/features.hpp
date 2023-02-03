@@ -64,7 +64,7 @@ namespace features
    /*! Type alias for a collection of feature names.
     */
    using feature_names_t      = std::vector<std::string>;
-   /*! Type alias for the feature names tht define a system.
+   /*! Type alias for the feature names that define a system.
     */
    using system_t             = feature_names_t;
    /*! Type alias for a collection of systems that are defined
@@ -238,7 +238,7 @@ namespace features
              );
    }
 
-   /*! Returns true if model M has And not-features and false otherwise.
+   /*! Returns true if model M has and-not-features and false otherwise.
    */
    bool hasAN(model_id_t M)
    {
@@ -369,7 +369,7 @@ namespace features
       return result;
    }
 
-   /*! Returns value of or-not-feature for ids and feature expression nf.
+   /*! Returns value of and-not-feature for ids and feature expression nf.
    */
    maxnat_t and_not_feature_value(const std::vector<feature_id_t>& ids,const feature_expression_t& nf,const maxnat_t& bitmask)
    {
@@ -402,7 +402,7 @@ namespace features
    class combination_t
    {
       public:
-         /*! Constructr that accepts a vector with smybols and size k.
+         /*! Constructor that accepts a vector with symbols and size k.
          */
          combination_t(const std::vector<T> symbols,std::size_t k)
             :m_symbols(symbols),m_k(k)
@@ -593,7 +593,7 @@ namespace features
             return m_D;
          }
          /*! Creates and returns a collection with all names of independent features.
-             Takes raw features IDs for single system.
+             Takes raw feature IDs for single system.
           */
          feature_names_t generate_independent_features(const std::vector<feature_id_t>& f) const
          {
@@ -605,7 +605,7 @@ namespace features
             return result;
          }
          /*! Creates and returns a collection with all names of or-features.
-             Takes raw features IDs for single system.
+             Takes raw feature IDs for single system.
           */
          feature_names_t generate_or_features(const std::vector<feature_id_t>& f) const
          {
@@ -627,7 +627,7 @@ namespace features
             return result;
          }
          /*! Creates and returns a collection with all names of and-features.
-             Takes raw features IDs for single system.
+             Takes raw feature IDs for single system.
           */
          feature_names_t generate_and_features(const std::vector<feature_id_t>& f) const
          {
@@ -655,7 +655,7 @@ namespace features
             return result;
          }
          /*! Creates and returns a collection with all names of not-features.
-             Takes raw features IDs for single system.
+             Takes raw feature IDs for single system.
           */
          feature_names_t generate_not_features(const std::vector<feature_id_t>& nf) const
          {
@@ -671,7 +671,7 @@ namespace features
             return result;
          }
          /*! Creates and returns a collection with all names of or-not-features.
-             Takes raw features IDs for single system.          
+             Takes raw feature IDs for single system.          
           */
          feature_names_t generate_or_not_features(const std::vector<feature_id_t>& nf) const
          {
@@ -694,7 +694,7 @@ namespace features
             return result;
          }
          /*! Creates and returns a collection with all names of and-not-features.
-             Takes raw features IDs for single system.
+             Takes raw feature IDs for single system.
           */
          feature_names_t generate_and_not_features(const std::vector<feature_id_t>& nf) const 
          {
@@ -723,7 +723,7 @@ namespace features
             return result;
          }
          /*! Creates and returns all feature names that define a system. 
-             Takes raw features IDs for single system.
+             Takes raw feature IDs for single system.
           */
          system_t generate_system(const std::vector<feature_id_t>& f)  const
          {
@@ -742,23 +742,6 @@ namespace features
          systems_t generate_all_systems() const 
          {
             std::vector<std::vector<std::string>> result;
-/*          The following code is correct, but it does not produce
-            systems in the same order as the corresponding prototypical
-            program. There reason is, that in the prototypical program
-            an unsigned int variable is counted upwards starting at zero.
-            To achieve exactly the same behavior, which is desirable,
-            this part of the method will be rewritten.
-            // The following line is for "no feature is selected"
-            result.push_back(generate_system(std::vector<feature_id_t> { }));
-            for (feature_id_t k { 1 }; k <= n(); ++k)
-            {
-               combination_t combination(raw_independent_features(),k);
-               do
-               {
-                  result.push_back(generate_system(combination()));
-               } while (combination.next());
-            }
-*/
             for (maxnat_t s { 0 }; s < S(); ++s)
             {
                result.push_back(generate_system(unsigned2vector(s)));
@@ -778,7 +761,7 @@ namespace features
          {
             return m_raw_dependent_features;
          }
-         /*! Returns a collection wth all systems.
+         /*! Returns a collection wjth all systems.
           */
          const auto& all_systems() const
          {
@@ -842,7 +825,7 @@ namespace features
    class feature_location_isolation_t: public feature_location_t
    {
       public:
-         /*! Constructor that requires the number of idependent features
+         /*! Constructor that requires the number of independent features
              and the number of the model as parameters.
           */
          feature_location_isolation_t(feature_id_t n_,
@@ -863,25 +846,6 @@ namespace features
                                    + m_or_not_features.size()
                                    + m_and_not_features.size()
                                  );
-/*            m_all_features.insert(m_all_features.end(),
-                                  m_independent_features.begin(),
-                                  m_independent_features.end());
-            m_all_features.insert(m_all_features.end(),
-                                  m_or_features.begin(),
-                                  m_or_features.end());
-            m_all_features.insert(m_all_features.end(),
-                                  m_and_features.begin(),
-                                  m_and_features.end());
-            m_all_features.insert(m_all_features.end(),
-                                  m_not_features.begin(),
-                                  m_not_features.end());
-            m_all_features.insert(m_all_features.end(),
-                                  m_or_not_features.begin(),
-                                  m_or_not_features.end());
-            m_all_features.insert(m_all_features.end(),
-                                  m_and_not_features.begin(),
-                                  m_and_not_features.end());
-*/
             concat(concat(concat(concat(concat(concat(m_all_features,
                    m_independent_features),m_or_features),m_and_features),
                    m_not_features),m_or_not_features),m_and_not_features
@@ -1022,7 +986,7 @@ namespace features
          {
             return m_and_not_features;
          }
-         /*! Returns collection with allall features.
+         /*! Returns collection with all features.
           */
          const std::vector<std::string>& all_features() const
          {
@@ -1511,7 +1475,7 @@ namespace features
          {
             return m_and_not_features;
          }
-         /*! Returns collection with allfeature names plus difference ID plus set difference.
+         /*! Returns collection with all feature names plus difference ID plus set difference.
           */
          feature_expression_t all_features() const
          {
