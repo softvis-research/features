@@ -5,6 +5,7 @@
  * \warning This program is a research prototype only. It comes with
  *  no warranty and no liability. Use it only at your own risk!
  * \copyright This program is released under the Apache License 2.0.
+ * fl in the program name is an acronym for Feature Location.
  */
 
 #include <fstream> // because of ofstream
