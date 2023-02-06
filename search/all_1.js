@@ -8,8 +8,11 @@ var searchData=
   ['calculate_5fnot_5ffeatures_15',['calculate_not_features',['../classfeatures_1_1feature__location__calculation__t.html#a57318218048f02402a9e2f42afa6a5b3',1,'features::feature_location_calculation_t']]],
   ['calculate_5for_5ffeatures_16',['calculate_or_features',['../classfeatures_1_1feature__location__calculation__t.html#a8c4474c6a756a35f5d728edf8aa6b9e6',1,'features::feature_location_calculation_t']]],
   ['calculate_5for_5fnot_5ffeatures_17',['calculate_or_not_features',['../classfeatures_1_1feature__location__calculation__t.html#a9e08e35ad6f1aac62d59eabe98aaa41b',1,'features::feature_location_calculation_t']]],
-  ['combination_5ft_18',['combination_t',['../classfeatures_1_1combination__t.html#afc415966bcdcf38b06c1fdc6d4cc7449',1,'features::combination_t::combination_t()'],['../classfeatures_1_1combination__t.html',1,'features::combination_t&lt; T &gt;']]],
-  ['combinations_19',['combinations',['../namespacefeatures.html#a23fd843484376822a4b6b0494b619942',1,'features']]],
-  ['concat_20',['concat',['../namespacefeatures.html#a70c5d2e98a6d54205fc167fa494f5e95',1,'features']]],
-  ['contains_21',['contains',['../namespacefeatures.html#a788066ab482bc2927509d1b5a9ff7b91',1,'features']]]
+  ['ceil_5fdiv_18',['ceil_div',['../fl_8cpp.html#abed8ba51f79f8b1370e24ff32e7bf18f',1,'fl.cpp']]],
+  ['checking_19',['checking',['../fl_8cpp.html#a14fa1001d447c30374d0fccd7788c1ab',1,'fl.cpp']]],
+  ['combination_5felement_5ft_20',['combination_element_t',['../fl_8cpp.html#a4fc00cfa47fa4ed18c562c2a9f86ada2',1,'fl.cpp']]],
+  ['combination_5ft_21',['combination_t',['../classcombination__t.html',1,'combination_t'],['../classfeatures_1_1combination__t.html#afc415966bcdcf38b06c1fdc6d4cc7449',1,'features::combination_t::combination_t()'],['../classcombination__t.html#ac905417440dfe6c7018ead750fd73a18',1,'combination_t::combination_t()'],['../classfeatures_1_1combination__t.html',1,'features::combination_t&lt; T &gt;']]],
+  ['combinations_22',['combinations',['../namespacefeatures.html#a23fd843484376822a4b6b0494b619942',1,'features']]],
+  ['concat_23',['concat',['../namespacefeatures.html#a70c5d2e98a6d54205fc167fa494f5e95',1,'features']]],
+  ['contains_24',['contains',['../namespacefeatures.html#a788066ab482bc2927509d1b5a9ff7b91',1,'features']]]
 ];

@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Features: src/features.hpp Source File</title>
+<title>Features: src/features/features.hpp Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -61,7 +61,7 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li>  </ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_751a3bd66ed682f151629a9c0f0ebd6e.html">features</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -1017,7 +1017,7 @@ $(function() {
 <div class="line"><a name="l01204"></a><span class="lineno"> 1204</span>&#160;         differences_t generate_non_empty_differences()<span class="keyword"> const</span></div>
 <div class="line"><a name="l01205"></a><span class="lineno"> 1205</span>&#160;<span class="keyword">         </span>{</div>
 <div class="line"><a name="l01206"></a><span class="lineno"> 1206</span>&#160;            differences_t result { };</div>
-<div class="line"><a name="l01207"></a><span class="lineno"> 1207</span>&#160;            <span class="keywordflow">for</span> (<a class="code" href="namespacefeatures.html#ae530c618adaa39a9514e0561b337aaae">maxnat_t</a> e { 1 }; e &lt; <a class="code" href="classfeatures_1_1feature__location__t.html#a1b682037c581cbba3297d6704272f000">D</a>(); ++e)</div>
+<div class="line"><a name="l01207"></a><span class="lineno"> 1207</span>&#160;            <span class="keywordflow">for</span> (<a class="code" href="fl_8cpp.html#a37b37357e7ee141fd881063a71278b2f">maxnat_t</a> e { 1 }; e &lt; <a class="code" href="classfeatures_1_1feature__location__t.html#a1b682037c581cbba3297d6704272f000">D</a>(); ++e)</div>
 <div class="line"><a name="l01208"></a><span class="lineno"> 1208</span>&#160;            {</div>
 <div class="line"><a name="l01209"></a><span class="lineno"> 1209</span>&#160;               <span class="keyword">const</span> <span class="keyword">auto</span>&amp; diff { <a class="code" href="classfeatures_1_1feature__location__differences__t.html#aa3fcffabe3dcb31fb5f70bb52b438b21">generate_difference</a>(e) };</div>
 <div class="line"><a name="l01210"></a><span class="lineno"> 1210</span>&#160;               <span class="keyword">const</span> <span class="keyword">auto</span>&amp; res { <a class="code" href="classfeatures_1_1feature__location__differences__t.html#afd26e6b598a969b952cd2c55ac340565">evaluate_difference</a>(diff) };</div>
@@ -1385,6 +1385,7 @@ $(function() {
 <div class="ttc" id="aclassfeatures_1_1feature__location__t_html_ae4bd33fb2ad36fc71efd681b53732217"><div class="ttname"><a href="classfeatures_1_1feature__location__t.html#ae4bd33fb2ad36fc71efd681b53732217">features::feature_location_t::A</a></div><div class="ttdeci">const auto &amp; A() const</div><div class="ttdef"><b>Definition:</b> features.hpp:555</div></div>
 <div class="ttc" id="aclassfeatures_1_1feature__location__t_html_af29dc30dfe58c12fee2eba5ba157400a"><div class="ttname"><a href="classfeatures_1_1feature__location__t.html#af29dc30dfe58c12fee2eba5ba157400a">features::feature_location_t::print_systems</a></div><div class="ttdeci">void print_systems(std::ostream &amp;os=std::cout)</div><div class="ttdef"><b>Definition:</b> features.hpp:791</div></div>
 <div class="ttc" id="aclassfeatures_1_1feature__location__t_html_afc8e08469c67ef18306020b88e70f525"><div class="ttname"><a href="classfeatures_1_1feature__location__t.html#afc8e08469c67ef18306020b88e70f525">features::feature_location_t::ON</a></div><div class="ttdeci">const auto &amp; ON() const</div><div class="ttdef"><b>Definition:</b> features.hpp:567</div></div>
+<div class="ttc" id="afl_8cpp_html_a37b37357e7ee141fd881063a71278b2f"><div class="ttname"><a href="fl_8cpp.html#a37b37357e7ee141fd881063a71278b2f">maxnat_t</a></div><div class="ttdeci">uintmax_t maxnat_t</div><div class="ttdef"><b>Definition:</b> fl.cpp:29</div></div>
 <div class="ttc" id="anamespacefeatures_html"><div class="ttname"><a href="namespacefeatures.html">features</a></div><div class="ttdef"><b>Definition:</b> features.hpp:28</div></div>
 <div class="ttc" id="anamespacefeatures_html_a0ea1f9a161d25508a9d7017be9ea23fc"><div class="ttname"><a href="namespacefeatures.html#a0ea1f9a161d25508a9d7017be9ea23fc">features::difference_name</a></div><div class="ttdeci">std::string difference_name(feature_id_t n)</div><div class="ttdef"><b>Definition:</b> features.hpp:331</div></div>
 <div class="ttc" id="anamespacefeatures_html_a17ba4ae3537e03e77bd33fea3b1a09b0"><div class="ttname"><a href="namespacefeatures.html#a17ba4ae3537e03e77bd33fea3b1a09b0">features::hasN</a></div><div class="ttdeci">bool hasN(model_id_t M)</div><div class="ttdef"><b>Definition:</b> features.hpp:224</div></div>

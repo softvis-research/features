@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['unions_216',['unions',['../structfeatures_1_1systems__difference__t.html#a08cfb1cad0c06ca8c15a9d39e006f4ce',1,'features::systems_difference_t']]]
+  ['intersections_249',['intersections',['../structfeatures_1_1systems__difference__t.html#a1d3f5fb3ab3315caba26881a7c1165b9',1,'features::systems_difference_t']]]
 ];

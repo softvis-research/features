@@ -1,7 +1,4 @@
 var searchData=
 [
-  ['feature_5flocation_5fcalculation_5ft_111',['feature_location_calculation_t',['../classfeatures_1_1feature__location__calculation__t.html',1,'features']]],
-  ['feature_5flocation_5fdifferences_5ft_112',['feature_location_differences_t',['../classfeatures_1_1feature__location__differences__t.html',1,'features']]],
-  ['feature_5flocation_5fisolation_5ft_113',['feature_location_isolation_t',['../classfeatures_1_1feature__location__isolation__t.html',1,'features']]],
-  ['feature_5flocation_5ft_114',['feature_location_t',['../classfeatures_1_1feature__location__t.html',1,'features']]]
+  ['difference_5fexpression_5fgenerator_129',['difference_expression_generator',['../classdifference__expression__generator.html',1,'']]]
 ];
