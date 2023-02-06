@@ -23,7 +23,7 @@ Calculates valid set differences for F independent features according to model M
 1. `$ ./fid.exe`
 2. `$ ./fdd.exe`
 3. `$ ./fcd.exe`
-3. `$ ./fl.exe`
+4. `$ ./fl.exe`
 
 The programs 1, 2 and 3 accept two values as input, namely the number of independent features and the selected model (M1 to M19, entered as an integer in the interval 1..19). Afterwards it stores the following results in a comma-separated value (CSV) file.
 
