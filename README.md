@@ -47,7 +47,7 @@ the number of independent features, followed by _ and the symbol for the
 corresponding feature category, for example, F for independent features. Each line in
 each file contains two values separated by a tab.
 1. A string that contains the feature name.
-2. A bitstring that represents a difference expression. The most significant bit (MSB) at the most left position indicates that the system has to be
+2. A bit string that represents a difference expression. The most significant bit (MSB) at the most left position indicates that the system has to be
 intersected if it has value 1 or that it has to be united if it has value 0.
 
 # Author
