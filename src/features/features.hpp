@@ -20,6 +20,7 @@
 #include <cstddef>
 #include <iostream>
 #include <climits>
+#include <cstdint> // because of std::uintmax_t
 
 /*! This namespace contains all types and functions that are related
     to feature location.
@@ -801,10 +802,11 @@ namespace features
             }
          }
      private:
-         const feature_id_t  m_n,
-                             m_M;
-         const maxnat_t m_F,
-                        m_S,
+         const feature_id_t  m_n;
+         const maxnat_t m_F;
+         const feature_id_t m_M;
+
+         const maxnat_t m_S,
                         m_O,
                         m_A,
                         m_N,

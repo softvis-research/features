@@ -11,6 +11,7 @@
 #include <iostream>
 #include <vector> // because of vector<bool> and vector<>
 #include <exception>
+#include <cstdint> // because of std::uintmax_t
 using namespace std;
 
 /*! checking turns some checks for errors on or off.
@@ -147,9 +148,9 @@ class combination_t
         return m_state;
       }
    private:
-      std::vector<combination_element_t> m_state;
-      combination_element_t m_k;
       combination_element_t m_n;
+      combination_element_t m_k;
+      std::vector<combination_element_t> m_state;
 };
 
 /*! Type alias for the program specific name for a
